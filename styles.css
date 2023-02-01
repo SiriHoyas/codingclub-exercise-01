@@ -1,0 +1,112 @@
+/* 
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fdfdfd;
+  background-image: url("./src/img/Group\ 1.svg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: large;
+  bottom: 0;
+}
+
+.active-btn {
+  background-color: #5296fc;
+  color: #fdfdfd;
+}
+
+.inactive-btn {
+  background-color: #cdcdcd;
+  color: rgb(146, 146, 146);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #517a88;
+  height: 50%;
+  width: 40%;
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 1px rgba(125, 125, 125, 0.6);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.login-form input {
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: large;
+  color: black;
+}
+
+.login-form label {
+  color: #ececec;
+  margin-bottom: 0.2rem;
+}
+
+#email {
+  margin-bottom: 1rem;
+}
+
+#password {
+  margin-bottom: 1rem;
+}
+
+.password-input-container {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1000ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
